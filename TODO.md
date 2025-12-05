@@ -1,6 +1,9 @@
 # TODO
 
 This is a running TODO list for the adaptive Gaussian filtering project.
+[ ] mean needs to be done
+[-] mean started but needs work
+[x] mean complete
 
 ---
 
