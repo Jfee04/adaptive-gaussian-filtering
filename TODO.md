@@ -45,7 +45,7 @@ This is a running TODO list for the adaptive Gaussian filtering project.
 
 ## 3. Testing and Evaluation
 
-- [~] **Compare adaptive methods with uniform Gaussian**
+- [-] **Compare adaptive methods with uniform Gaussian**
   - Metrics: MSE, PSNR, and visual comparison.
   - Include the following methods in comparison:
     - Uniform Gaussian
