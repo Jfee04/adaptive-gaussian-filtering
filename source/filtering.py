@@ -1,3 +1,5 @@
+#filtering.py  filter methods
+
 import cv2
 import numpy as np
 from sigma_map import compute_mean_sigma_map, compute_variance_sigma_map

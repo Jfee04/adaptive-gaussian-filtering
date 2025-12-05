@@ -1,3 +1,6 @@
+#main.py main method to test filtering teqnieques and compare
+
+
 import os
 import cv2
 import numpy as np

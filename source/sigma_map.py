@@ -1,3 +1,5 @@
+# sigma_map.py methods to make sigma maps to pass into the adaptive filter
+
 import cv2
 import numpy as np
 
@@ -18,10 +20,7 @@ def compute_mean_sigma_map(img, k=7, min_sigma=0.5, max_sigma=3.0):
     dist_norm = dist * 2
 
     # map to [min_sigma, max_sigma]
-    sigma_map = min_sigma + (max_sigma - min_sigma) * dist_norm
-    return sigma_map.astype(np.float32)
-
-
+    return map_range(min_sigma, max_sigma, dist_norm)
 
 
 # -----------------------------------------------------------------------
@@ -44,6 +43,35 @@ def compute_variance_sigma_map(img, k=7, min_sigma=0.5, max_sigma=3.0):
     inv = 1.0 - var_norm
 
     # map to sigma range
+    return map_range(min_sigma, max_sigma, inv)
+
+
+
+
+# -----------------------------------------------------------------------
+# compute adaptive sigma map based on local intensity
+    # greater sigma in low or high intensity areas based on mode
+    # honestly cant logic why this would work just feel like it might
+    # sigma in [min_sigma, max_sigma
+def compute_intensity_sigma_map(img, mode="low", k=7, min_sigma=0.5, max_sigma=3.0):
+    # compute local mean intensity using a box filter
+    kernel = np.ones((k, k), np.float32) / (k * k)
+    local_mean = cv2.filter2D(img, -1, kernel)
+
+    # normalize to [0,1]
+    int_min, int_max = local_mean.min(), local_mean.max()
+    int_norm = (local_mean - int_min) / (int_max - int_min + 1e-8)
+
+    # invert: low intensity → high sigma
+    if mode == "low":
+        int_norm = 1.0 - int_norm
+        
+    # map to sigma range
+    return map_range(min_sigma, max_sigma, int_norm)
+
+
+
+# util function 
+def map_range(min_sigma, max_sigma, inv):
     sigma_map = min_sigma + (max_sigma - min_sigma) * inv
     return sigma_map.astype(np.float32)
-
