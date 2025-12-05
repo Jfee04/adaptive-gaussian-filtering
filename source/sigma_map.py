@@ -52,7 +52,7 @@ def compute_variance_sigma_map(img, k=7, min_sigma=0.5, max_sigma=3.0):
 # compute adaptive sigma map based on local intensity
     # greater sigma in low or high intensity areas based on mode
     # honestly cant logic why this would work just feel like it might
-    # sigma in [min_sigma, max_sigma
+    # sigma in [min_sigma, max_sigma]
 def compute_intensity_sigma_map(img, mode="low", k=7, min_sigma=0.5, max_sigma=3.0):
     # compute local mean intensity using a box filter
     kernel = np.ones((k, k), np.float32) / (k * k)
@@ -68,6 +68,31 @@ def compute_intensity_sigma_map(img, mode="low", k=7, min_sigma=0.5, max_sigma=3
         
     # map to sigma range
     return map_range(min_sigma, max_sigma, int_norm)
+
+
+# -----------------------------------------------------------------------
+# compute adaptive sigma map based on Canny edge detection
+    # edge areas get low sigma, non-edge areas get high sigma
+    # when mode is blurred the edge map is blurred to create a smoother sigma map
+    # sigma in [min_sigma, max_sigma]
+def compute_canny_sigma_map(img, mode="clean", k=7, min_sigma=0.5, max_sigma=3.0):
+    # Apply Canny edge detection -> outputs 8 bit image
+    edges = cv2.Canny((img * 255).astype(np.uint8), 100, 200)
+
+    if mode == "blurred":
+        # Blur edges to create smoother sigma map
+        edges = cv2.GaussianBlur(edges, (k, k), 0)
+
+    # Normalize edges to [0,1]
+    edges_norm = edges.astype(np.float32) / 255.0
+
+    # Invert: edges (1) → low sigma, non-edges (0) → high sigma
+    inv = 1.0 - edges_norm
+
+    # map to sigma range
+    return map_range(min_sigma, max_sigma, inv)
+
+
 
 
 

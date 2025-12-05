@@ -14,7 +14,7 @@ This is a running TODO list for the adaptive Gaussian filtering project.
   - Ensure that high-variance areas (edges) get lower σ to preserve edges.
   - Consider using multi-scale variance (5×5, 9×9, 21×21).
 
-- [ ] **Edge-aware sigma map**
+- [x] **Edge-aware sigma map**
   - Use edge detection to assign lower σ to edge pixels.
 
 - [x] **Intensity-dependent sigma map**
@@ -27,7 +27,7 @@ This is a running TODO list for the adaptive Gaussian filtering project.
 
 ## 2. Adaptive Gaussian Filtering
 
-- [ ] **Vectorize per-pixel Gaussian filtering**
+- [x] **Vectorize per-pixel Gaussian filtering**
   - Remove nested loops using `adaptive_gaussian_vectorized`.
   - Ensure correct indexing when using discretized σ bins.
 
@@ -45,7 +45,7 @@ This is a running TODO list for the adaptive Gaussian filtering project.
 
 ## 3. Testing and Evaluation
 
-- [ ] **Compare adaptive methods with uniform Gaussian**
+- [~] **Compare adaptive methods with uniform Gaussian**
   - Metrics: MSE, PSNR, and visual comparison.
   - Include the following methods in comparison:
     - Uniform Gaussian

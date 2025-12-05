@@ -4,7 +4,10 @@
 import os
 import cv2
 import numpy as np
+
 from filtering import uniform_gaussian, variable_gaussian
+from evaluation import evaluate_methods
+
 
 
 
@@ -20,7 +23,7 @@ if __name__ == "__main__":
     img = cv2.imread("img/cameraman.tif", cv2.IMREAD_GRAYSCALE)
     img = img.astype(np.float32) / 255.0
 
-    noisy = img + 0.1 * np.random.randn(*img.shape)
+    noisy = img + 0.3 * np.random.randn(*img.shape)
     noisy = np.clip(noisy, 0, 1)
 
 
@@ -32,17 +35,17 @@ if __name__ == "__main__":
 
     base = uniform_gaussian(noisy)
 
-
-
     mean7 = variable_gaussian(noisy, "mean", k=7, bins=256)
     mean15 = variable_gaussian(noisy, "mean", k=15, bins=256)
 
     var7 = variable_gaussian(noisy, "variance", k=7, bins=256)
     var15 = variable_gaussian(noisy, "variance", k=15, bins=256)
 
+    int7Low = variable_gaussian(noisy, "intensity_low", k=7, bins=256)
+    int7High = variable_gaussian(noisy, "intensity_high", k=7, bins=256)
 
-
-
+    cannyClean = variable_gaussian(noisy, "canny_clean", k=7, bins=256)
+    cannyBlurred = variable_gaussian(noisy, "canny_blurred", k=7, bins=256)
 
 
     combined = np.hstack([
@@ -50,9 +53,9 @@ if __name__ == "__main__":
         noisy,
         base,
         mean7,
-        mean15,
         var7,
-        var15
+        int7Low,
+        cannyClean        
     ])
 
 
@@ -60,5 +63,14 @@ if __name__ == "__main__":
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
+    results = {
+        "Uniform Gaussian": base,
+        "Mean Variable Gaussian": mean7,
+        "Variance Variable Gaussian": var7,
+        "Intensity Low Variable Gaussian": int7Low,
+        "Canny Clean Variable Gaussian": cannyClean,
+    }
+
+    evaluate_methods(img, results, data_range=1.0)
 
 

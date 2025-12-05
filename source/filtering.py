@@ -2,7 +2,7 @@
 
 import cv2
 import numpy as np
-from sigma_map import compute_mean_sigma_map, compute_variance_sigma_map
+from sigma_map import compute_mean_sigma_map, compute_variance_sigma_map, compute_intensity_sigma_map, compute_canny_sigma_map
 
 
 
@@ -39,6 +39,14 @@ def variable_gaussian(img, mode="mean", k=7, bins=8):
         sigma_map = compute_mean_sigma_map(img, k)
     elif mode == "variance":
         sigma_map = compute_variance_sigma_map(img, k)
+    elif mode == "intensity_low":
+        sigma_map = compute_intensity_sigma_map(img, "low", k)
+    elif mode == "intensity_high":
+        sigma_map = compute_intensity_sigma_map(img, "high", k)
+    elif mode == "canny_clean":
+        sigma_map = compute_canny_sigma_map(img, "clean", k)
+    elif mode == "canny_blurred":
+        sigma_map = compute_canny_sigma_map(img, "blurred", k)
     else:
         raise ValueError("mode must be 'mean' or 'variance'")
 
