@@ -66,14 +66,8 @@ This is a running TODO list for the adaptive Gaussian filtering project.
 
 ---
 
-## 4. Clean up
 
-- [ ] **Extract repeat code to methods**
-  - Find repeat code and make methods to replace them
-
----
-
-## 5. Code Organization
+## 4. Code Organization
 
 - [x] **Separate map generation functions**
   - Moved `compute_mean_sigma_map`, `compute_variance_sigma_map`, etc., to `sigma_map.py`.
@@ -85,9 +79,13 @@ This is a running TODO list for the adaptive Gaussian filtering project.
 - [ ] **Add inline TODOs in code**
   - Use `# TODO:` comments for small, local improvements.
 
+- [ ] **Extract repeat code to methods**
+  - Find repeat code and make methods to replace them
+
+
 ---
 
-## 6. Optional Extensions
+## 5. Optional Extensions
 
 - [ ] **Combine multiple adaptive approaches**
   - For example, use variance + intensity for sigma computation.
