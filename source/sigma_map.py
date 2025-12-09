@@ -25,7 +25,7 @@ def compute_mean_sigma_map(img, k=7, min_sigma=0.5, max_sigma=3.0):
 
 # -----------------------------------------------------------------------
 # computes a sigma map based on local variance
-    # the more greater the variance, the lower the sigma
+    # the greater the variance, the lower the sigma
     # this is because high variance areas are more likely to be edges
     # sigma in [min_sigma, max_sigma]
 def compute_variance_sigma_map(img, k=7, min_sigma=0.5, max_sigma=3.0):
@@ -44,8 +44,6 @@ def compute_variance_sigma_map(img, k=7, min_sigma=0.5, max_sigma=3.0):
 
     # map to sigma range
     return map_range(min_sigma, max_sigma, inv)
-
-
 
 
 # -----------------------------------------------------------------------

@@ -1,0 +1,8 @@
+=== Evaluation Metrics ===
+Uniform Gaussian: MSE = 0.007659, PSNR = 21.16 dB
+mean k=5: MSE = 0.009386, PSNR = 20.28 dB
+mean k=9: MSE = 0.009414, PSNR = 20.26 dB
+mean k=21: MSE = 0.009307, PSNR = 20.31 dB
+variance k=5: MSE = 0.007789, PSNR = 21.09 dB
+variance k=9: MSE = 0.007096, PSNR = 21.49 dB
+variance k=21: MSE = 0.006972, PSNR = 21.57 dB

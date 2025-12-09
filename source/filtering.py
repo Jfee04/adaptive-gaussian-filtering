@@ -30,8 +30,7 @@ def adaptive_gaussian_vectorized(img, sigma_map, k=7, bins=8):
 
 
 
-#Intensity Variable Guassian 
-# doesnt do a whole lot to make the image sharper 
+#call this to do the filtering. Binning is used to speed up the process
 def variable_gaussian(img, mode="mean", k=7, bins=8):
     img = img.astype(np.float32)
 

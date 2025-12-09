@@ -1,0 +1,4 @@
+=== Evaluation Metrics ===
+Uniform Gaussian: MSE = 0.007296, PSNR = 21.37 dB
+canny_blurred k=5: MSE = 0.007407, PSNR = 21.30 dB
+canny_blurred k=9: MSE = 0.008518, PSNR = 20.70 dB
