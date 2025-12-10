@@ -1,0 +1,109 @@
+=============== GLOBAL TOP 10 METHODS ===============
+[evaluation_SimpleShapes_sigma0.3.txt] MSE=0.012594, PSNR=19.000, ΔMSE=-0.001981, ΔPSNR=0.640  variance k=21: MSE = 0.012594, PSNR = 19.00 dB
+[evaluation_SimpleShapes_sigma0.3.txt] MSE=0.012658, PSNR=18.980, ΔMSE=-0.001917, ΔPSNR=0.620  mean k=21: MSE = 0.012658, PSNR = 18.98 dB
+[evaluation_SimpleShapes_sigma0.3.txt] MSE=0.012714, PSNR=18.960, ΔMSE=-0.001861, ΔPSNR=0.600  variance k=15: MSE = 0.012714, PSNR = 18.96 dB
+[evaluation_SimpleShapes_sigma0.3.txt] MSE=0.012753, PSNR=18.940, ΔMSE=-0.001822, ΔPSNR=0.580  mean k=15: MSE = 0.012753, PSNR = 18.94 dB
+[evaluation_SimpleShapes_sigma0.2.txt] MSE=0.005493, PSNR=22.600, ΔMSE=-0.001653, ΔPSNR=1.140  variance k=21: MSE = 0.005493, PSNR = 22.60 dB
+[evaluation_SimpleShapes_sigma0.2.txt] MSE=0.005495, PSNR=22.600, ΔMSE=-0.001651, ΔPSNR=1.140  mean k=21: MSE = 0.005495, PSNR = 22.60 dB
+[evaluation_SimpleShapes_sigma0.2.txt] MSE=0.005591, PSNR=22.520, ΔMSE=-0.001555, ΔPSNR=1.060  variance k=15: MSE = 0.005591, PSNR = 22.52 dB
+[evaluation_Barbara_sigma0.1.txt] MSE=0.005827, PSNR=22.350, ΔMSE=-0.001531, ΔPSNR=1.020  mean k=21: MSE = 0.005827, PSNR = 22.35 dB
+[evaluation_SimpleShapes_sigma0.1.txt] MSE=0.001615, PSNR=27.920, ΔMSE=-0.001507, ΔPSNR=2.860  variance k=21: MSE = 0.001615, PSNR = 27.92 dB
+[evaluation_SimpleShapes_sigma0.2.txt] MSE=0.005655, PSNR=22.480, ΔMSE=-0.001491, ΔPSNR=1.020  mean k=15: MSE = 0.005655, PSNR = 22.48 dB
+
+=============== TOP 2 PER FILE ===============
+
+== evaluation_Checkerboard.txt ==
+[evaluation_Checkerboard.txt] MSE=0.013164, PSNR=18.810, ΔMSE=0.001704, ΔPSNR=-0.600  canny_clean k=7: MSE = 0.013164, PSNR = 18.81 dB
+[evaluation_Checkerboard.txt] MSE=0.013705, PSNR=18.630, ΔMSE=0.002245, ΔPSNR=-0.780  canny_clean k=15: MSE = 0.013705, PSNR = 18.63 dB
+
+== evaluation_Gradient_sigma0.3.txt ==
+[evaluation_Gradient_sigma0.3.txt] MSE=0.005885, PSNR=22.300, ΔMSE=-0.001012, ΔPSNR=0.690  canny_blurred k=21: MSE = 0.005885, PSNR = 22.30 dB
+[evaluation_Gradient_sigma0.3.txt] MSE=0.005900, PSNR=22.290, ΔMSE=-0.000997, ΔPSNR=0.680  canny_blurred k=15: MSE = 0.005900, PSNR = 22.29 dB
+
+== evaluation_SimpleShapes_sigma0.2.txt ==
+[evaluation_SimpleShapes_sigma0.2.txt] MSE=0.005493, PSNR=22.600, ΔMSE=-0.001653, ΔPSNR=1.140  variance k=21: MSE = 0.005493, PSNR = 22.60 dB
+[evaluation_SimpleShapes_sigma0.2.txt] MSE=0.005495, PSNR=22.600, ΔMSE=-0.001651, ΔPSNR=1.140  mean k=21: MSE = 0.005495, PSNR = 22.60 dB
+
+== evaluation_Cameraman_sigma0.3.txt ==
+[evaluation_Cameraman_sigma0.3.txt] MSE=0.008180, PSNR=20.870, ΔMSE=-0.001016, ΔPSNR=0.510  variance k=21: MSE = 0.008180, PSNR = 20.87 dB
+[evaluation_Cameraman_sigma0.3.txt] MSE=0.008304, PSNR=20.810, ΔMSE=-0.000892, ΔPSNR=0.450  variance k=15: MSE = 0.008304, PSNR = 20.81 dB
+
+== evaluation_Gradient_sigma0.2.txt ==
+[evaluation_Gradient_sigma0.2.txt] MSE=0.002215, PSNR=26.550, ΔMSE=-0.000527, ΔPSNR=0.930  canny_blurred k=21: MSE = 0.002215, PSNR = 26.55 dB
+[evaluation_Gradient_sigma0.2.txt] MSE=0.002223, PSNR=26.530, ΔMSE=-0.000519, ΔPSNR=0.910  canny_blurred k=15: MSE = 0.002223, PSNR = 26.53 dB
+
+== evaluation_Lena_sigma0.3.txt ==
+[evaluation_Lena_sigma0.3.txt] MSE=0.003467, PSNR=24.600, ΔMSE=-0.000853, ΔPSNR=0.960  variance k=15: MSE = 0.003467, PSNR = 24.60 dB
+[evaluation_Lena_sigma0.3.txt] MSE=0.003472, PSNR=24.590, ΔMSE=-0.000848, ΔPSNR=0.950  variance k=21: MSE = 0.003472, PSNR = 24.59 dB
+
+== evaluation_SimpleShapes_sigma0.1.txt ==
+[evaluation_SimpleShapes_sigma0.1.txt] MSE=0.001615, PSNR=27.920, ΔMSE=-0.001507, ΔPSNR=2.860  variance k=21: MSE = 0.001615, PSNR = 27.92 dB
+[evaluation_SimpleShapes_sigma0.1.txt] MSE=0.001708, PSNR=27.670, ΔMSE=-0.001414, ΔPSNR=2.610  variance k=15: MSE = 0.001708, PSNR = 27.67 dB
+
+== evaluation_Gradient.txt ==
+[evaluation_Gradient.txt] MSE=0.001680, PSNR=27.750, ΔMSE=0.000222, ΔPSNR=-0.610  intensity_low k=9: MSE = 0.001680, PSNR = 27.75 dB
+[evaluation_Gradient.txt] MSE=0.001784, PSNR=27.490, ΔMSE=0.000326, ΔPSNR=-0.870  intensity_high k=9: MSE = 0.001784, PSNR = 27.49 dB
+
+== evaluation_Lena_sigma0.2.txt ==
+[evaluation_Lena_sigma0.2.txt] MSE=0.002238, PSNR=26.500, ΔMSE=-0.000224, ΔPSNR=0.410  variance k=21: MSE = 0.002238, PSNR = 26.50 dB
+[evaluation_Lena_sigma0.2.txt] MSE=0.002242, PSNR=26.490, ΔMSE=-0.000220, ΔPSNR=0.400  variance k=15: MSE = 0.002242, PSNR = 26.49 dB
+
+== evaluation_Barbara_sigma0.1.txt ==
+[evaluation_Barbara_sigma0.1.txt] MSE=0.005827, PSNR=22.350, ΔMSE=-0.001531, ΔPSNR=1.020  mean k=21: MSE = 0.005827, PSNR = 22.35 dB
+[evaluation_Barbara_sigma0.1.txt] MSE=0.005877, PSNR=22.310, ΔMSE=-0.001481, ΔPSNR=0.980  mean k=15: MSE = 0.005877, PSNR = 22.31 dB
+
+== evaluation_Checkerboard_sigma0.3.txt ==
+[evaluation_Checkerboard_sigma0.3.txt] MSE=0.014941, PSNR=18.260, ΔMSE=-0.001241, ΔPSNR=0.350  variance k=21: MSE = 0.014941, PSNR = 18.26 dB
+[evaluation_Checkerboard_sigma0.3.txt] MSE=0.015004, PSNR=18.240, ΔMSE=-0.001178, ΔPSNR=0.330  variance k=15: MSE = 0.015004, PSNR = 18.24 dB
+
+== evaluation_SimpleShapes.txt ==
+[evaluation_SimpleShapes.txt] MSE=0.007407, PSNR=21.300, ΔMSE=0.000111, ΔPSNR=-0.070  canny_blurred k=5: MSE = 0.007407, PSNR = 21.30 dB
+[evaluation_SimpleShapes.txt] MSE=0.008518, PSNR=20.700, ΔMSE=0.001222, ΔPSNR=-0.670  canny_blurred k=9: MSE = 0.008518, PSNR = 20.70 dB
+
+== evaluation_Checkerboard_sigma0.2.txt ==
+[evaluation_Checkerboard_sigma0.2.txt] MSE=0.006726, PSNR=21.720, ΔMSE=-0.000856, ΔPSNR=0.520  variance k=21: MSE = 0.006726, PSNR = 21.72 dB
+[evaluation_Checkerboard_sigma0.2.txt] MSE=0.006779, PSNR=21.690, ΔMSE=-0.000803, ΔPSNR=0.490  mean k=21: MSE = 0.006779, PSNR = 21.69 dB
+
+== evaluation_Lena_sigma0.1.txt ==
+[evaluation_Lena_sigma0.1.txt] MSE=0.001292, PSNR=28.890, ΔMSE=-0.000011, ΔPSNR=0.040  intensity_high k=5: MSE = 0.001292, PSNR = 28.89 dB
+[evaluation_Lena_sigma0.1.txt] MSE=0.001334, PSNR=28.750, ΔMSE=0.000031, ΔPSNR=-0.100  canny_blurred k=5: MSE = 0.001334, PSNR = 28.75 dB
+
+== evaluation_Cameraman_sigma0.2.txt ==
+[evaluation_Cameraman_sigma0.2.txt] MSE=0.005708, PSNR=22.440, ΔMSE=-0.000602, ΔPSNR=0.440  variance k=21: MSE = 0.005708, PSNR = 22.44 dB
+[evaluation_Cameraman_sigma0.2.txt] MSE=0.005923, PSNR=22.270, ΔMSE=-0.000387, ΔPSNR=0.270  variance k=15: MSE = 0.005923, PSNR = 22.27 dB
+
+== evaluation_Cameraman_sigma0.1.txt ==
+[evaluation_Cameraman_sigma0.1.txt] MSE=0.003604, PSNR=24.430, ΔMSE=-0.000962, ΔPSNR=1.030  mean k=21: MSE = 0.003604, PSNR = 24.43 dB
+[evaluation_Cameraman_sigma0.1.txt] MSE=0.003672, PSNR=24.350, ΔMSE=-0.000894, ΔPSNR=0.950  mean k=5: MSE = 0.003672, PSNR = 24.35 dB
+
+== evaluation_Cameraman.txt ==
+[evaluation_Cameraman.txt] MSE=0.006972, PSNR=21.570, ΔMSE=-0.000687, ΔPSNR=0.410  variance k=21: MSE = 0.006972, PSNR = 21.57 dB
+[evaluation_Cameraman.txt] MSE=0.007096, PSNR=21.490, ΔMSE=-0.000563, ΔPSNR=0.330  variance k=9: MSE = 0.007096, PSNR = 21.49 dB
+
+== evaluation_Barbara_sigma0.2.txt ==
+[evaluation_Barbara_sigma0.2.txt] MSE=0.008322, PSNR=20.800, ΔMSE=-0.000588, ΔPSNR=0.300  mean k=21: MSE = 0.008322, PSNR = 20.80 dB
+[evaluation_Barbara_sigma0.2.txt] MSE=0.008336, PSNR=20.790, ΔMSE=-0.000574, ΔPSNR=0.290  mean k=15: MSE = 0.008336, PSNR = 20.79 dB
+
+== evaluation_Lena.txt ==
+[evaluation_Lena.txt] MSE=0.002247, PSNR=26.480, ΔMSE=-0.000205, ΔPSNR=0.380  variance k=15: MSE = 0.002247, PSNR = 26.48 dB
+[evaluation_Lena.txt] MSE=0.002289, PSNR=26.400, ΔMSE=-0.000163, ΔPSNR=0.300  variance k=7: MSE = 0.002289, PSNR = 26.40 dB
+
+== evaluation_Barbara.txt ==
+[evaluation_Barbara.txt] MSE=0.010388, PSNR=19.830, ΔMSE=0.000038, ΔPSNR=-0.020  variance k=15: MSE = 0.010388, PSNR = 19.83 dB
+[evaluation_Barbara.txt] MSE=0.010394, PSNR=19.830, ΔMSE=0.000044, ΔPSNR=-0.020  mean k=15: MSE = 0.010394, PSNR = 19.83 dB
+
+== evaluation_Barbara_sigma0.3.txt ==
+[evaluation_Barbara_sigma0.3.txt] MSE=0.011723, PSNR=19.310, ΔMSE=-0.000368, ΔPSNR=0.130  variance k=21: MSE = 0.011723, PSNR = 19.31 dB
+[evaluation_Barbara_sigma0.3.txt] MSE=0.011734, PSNR=19.310, ΔMSE=-0.000357, ΔPSNR=0.130  variance k=9: MSE = 0.011734, PSNR = 19.31 dB
+
+== evaluation_Checkerboard_sigma0.1.txt ==
+[evaluation_Checkerboard_sigma0.1.txt] MSE=0.001740, PSNR=27.600, ΔMSE=-0.000598, ΔPSNR=1.290  variance k=21: MSE = 0.001740, PSNR = 27.60 dB
+[evaluation_Checkerboard_sigma0.1.txt] MSE=0.001779, PSNR=27.500, ΔMSE=-0.000559, ΔPSNR=1.190  variance k=15: MSE = 0.001779, PSNR = 27.50 dB
+
+== evaluation_Gradient_sigma0.1.txt ==
+[evaluation_Gradient_sigma0.1.txt] MSE=0.000445, PSNR=33.520, ΔMSE=-0.000169, ΔPSNR=1.400  canny_blurred k=21: MSE = 0.000445, PSNR = 33.52 dB
+[evaluation_Gradient_sigma0.1.txt] MSE=0.000448, PSNR=33.490, ΔMSE=-0.000166, ΔPSNR=1.370  canny_blurred k=15: MSE = 0.000448, PSNR = 33.49 dB
+
+== evaluation_SimpleShapes_sigma0.3.txt ==
+[evaluation_SimpleShapes_sigma0.3.txt] MSE=0.012594, PSNR=19.000, ΔMSE=-0.001981, ΔPSNR=0.640  variance k=21: MSE = 0.012594, PSNR = 19.00 dB
+[evaluation_SimpleShapes_sigma0.3.txt] MSE=0.012658, PSNR=18.980, ΔMSE=-0.001917, ΔPSNR=0.620  mean k=21: MSE = 0.012658, PSNR = 18.98 dB
