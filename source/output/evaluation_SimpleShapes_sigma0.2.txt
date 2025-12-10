@@ -10,23 +10,23 @@ variance k=7: MSE = 0.006612, PSNR = 21.80 dB
 variance k=9: MSE = 0.006280, PSNR = 22.02 dB
 variance k=15: MSE = 0.005591, PSNR = 22.52 dB
 variance k=21: MSE = 0.005493, PSNR = 22.60 dB
-intensity_low k=5: MSE = 0.008005, PSNR = 20.97 dB
-intensity_low k=7: MSE = 0.008887, PSNR = 20.51 dB
-intensity_low k=9: MSE = 0.009362, PSNR = 20.29 dB
-intensity_low k=15: MSE = 0.009899, PSNR = 20.04 dB
-intensity_low k=21: MSE = 0.010038, PSNR = 19.98 dB
-intensity_high k=5: MSE = 0.007303, PSNR = 21.36 dB
-intensity_high k=7: MSE = 0.007810, PSNR = 21.07 dB
-intensity_high k=9: MSE = 0.008160, PSNR = 20.88 dB
-intensity_high k=15: MSE = 0.008432, PSNR = 20.74 dB
-intensity_high k=21: MSE = 0.008465, PSNR = 20.72 dB
-canny_clean k=5: MSE = 0.008280, PSNR = 20.82 dB
-canny_clean k=7: MSE = 0.009132, PSNR = 20.39 dB
-canny_clean k=9: MSE = 0.009837, PSNR = 20.07 dB
-canny_clean k=15: MSE = 0.010828, PSNR = 19.65 dB
-canny_clean k=21: MSE = 0.010966, PSNR = 19.60 dB
-canny_blurred k=5: MSE = 0.007259, PSNR = 21.39 dB
-canny_blurred k=7: MSE = 0.007916, PSNR = 21.02 dB
-canny_blurred k=9: MSE = 0.008390, PSNR = 20.76 dB
-canny_blurred k=15: MSE = 0.008715, PSNR = 20.60 dB
-canny_blurred k=21: MSE = 0.008694, PSNR = 20.61 dB
+        intensity_low k=5: MSE = 0.008005, PSNR = 20.97 dB
+        intensity_low k=7: MSE = 0.008887, PSNR = 20.51 dB
+        intensity_low k=9: MSE = 0.009362, PSNR = 20.29 dB
+        intensity_low k=15: MSE = 0.009899, PSNR = 20.04 dB
+        intensity_low k=21: MSE = 0.010038, PSNR = 19.98 dB
+        intensity_high k=5: MSE = 0.007303, PSNR = 21.36 dB
+        intensity_high k=7: MSE = 0.007810, PSNR = 21.07 dB
+        intensity_high k=9: MSE = 0.008160, PSNR = 20.88 dB
+        intensity_high k=15: MSE = 0.008432, PSNR = 20.74 dB
+        intensity_high k=21: MSE = 0.008465, PSNR = 20.72 dB
+        canny_clean k=5: MSE = 0.008280, PSNR = 20.82 dB
+        canny_clean k=7: MSE = 0.009132, PSNR = 20.39 dB
+        canny_clean k=9: MSE = 0.009837, PSNR = 20.07 dB
+        canny_clean k=15: MSE = 0.010828, PSNR = 19.65 dB
+        canny_clean k=21: MSE = 0.010966, PSNR = 19.60 dB
+        canny_blurred k=5: MSE = 0.007259, PSNR = 21.39 dB
+        canny_blurred k=7: MSE = 0.007916, PSNR = 21.02 dB
+        canny_blurred k=9: MSE = 0.008390, PSNR = 20.76 dB
+        canny_blurred k=15: MSE = 0.008715, PSNR = 20.60 dB
+        canny_blurred k=21: MSE = 0.008694, PSNR = 20.61 dB

@@ -1,4 +1,4 @@
 === Evaluation Metrics ===
 Uniform Gaussian: MSE = 0.011460, PSNR = 19.41 dB
-canny_clean k=7: MSE = 0.013164, PSNR = 18.81 dB
-canny_clean k=15: MSE = 0.013705, PSNR = 18.63 dB
+        canny_clean k=7: MSE = 0.013164, PSNR = 18.81 dB
+        canny_clean k=15: MSE = 0.013705, PSNR = 18.63 dB

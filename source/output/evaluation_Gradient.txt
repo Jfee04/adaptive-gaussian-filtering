@@ -1,6 +1,6 @@
 === Evaluation Metrics ===
 Uniform Gaussian: MSE = 0.001458, PSNR = 28.36 dB
-intensity_low k=5: MSE = 0.001884, PSNR = 27.25 dB
-intensity_low k=9: MSE = 0.001680, PSNR = 27.75 dB
-intensity_high k=5: MSE = 0.001955, PSNR = 27.09 dB
-intensity_high k=9: MSE = 0.001784, PSNR = 27.49 dB
+        intensity_low k=5: MSE = 0.001884, PSNR = 27.25 dB
+        intensity_low k=9: MSE = 0.001680, PSNR = 27.75 dB
+        intensity_high k=5: MSE = 0.001955, PSNR = 27.09 dB
+        intensity_high k=9: MSE = 0.001784, PSNR = 27.49 dB
